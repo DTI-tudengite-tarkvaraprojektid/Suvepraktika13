@@ -47,6 +47,14 @@ dht DHT;
     Serial.println("");
     Serial.println("WiFi not connected");
   }
+/*-------------------------HELI----------------------*/
+    float db;
+    int val;
+    val=analogRead(A0); 
+    db = 20 * log(val/3.3);
+    Serial.println(db);
+    //
+/*-------------------------TEMP----------------------*/
   DHT.read11(dht_apin);
     
     Serial.print("Current humidity = ");
@@ -55,7 +63,10 @@ dht DHT;
     Serial.print("temperature = ");
     Serial.print(DHT.temperature); 
     Serial.println("C  ");
-    
+
+
+
+ 
   delay(1000); // check for connection every once a second
   
   }
