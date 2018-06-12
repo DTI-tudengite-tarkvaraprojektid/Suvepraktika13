@@ -1,6 +1,6 @@
 <?php
 $url=$_SERVER['REQUEST_URI'];
-header("Refresh: 5; URL=$url");  // Refresh the webpage every 5 seconds
+header("Refresh: 1; URL=$url");  // Refresh the webpage every 5 seconds
 ?>
 <html>
 <head>
@@ -16,29 +16,31 @@ header("Refresh: 5; URL=$url");  // Refresh the webpage every 5 seconds
       </tr>
       
 <?php
-    // Connect to database
+    $host='sql203.epizy.com';
+    $dbusername = "epiz_22225394";  // enter database username, I used "arduino" in step 2.2
+    $dbpassword = "ryhm13";  // enter database password, I used "arduinotest" in step 2.2
+    $server = "epiz_22225394_suvepraktika13";
 
-   // IMPORTANT: If you are using XAMPP you will have to enter your computer IP address here, if you are using webpage enter webpage address (ie. "www.yourwebpage.com")
-    $con=mysqli_connect("localhost","if17","if17","if17_ryhm13");
-       
-    // Retrieve all records and display them   
-    $result = mysqli_query($con,'SELECT * FROM sensor ORDER BY id DESC');
-      
-    // Process every record
-    
-    while($row = mysqli_fetch_array($result))
-    {      
-        echo "<tr>";
-        echo "<td>" . $row['id'] . "</td>";
-        echo "<td>" . $row['time'] . "</td>";
-        echo "<td>" . $row['value'] . "</td>";
-        echo "</tr>";
-        
-    }
-        
-    // Close the connection   
-    mysqli_close($con);
+	function connection(){
+		$conn = new mysqli($GLOBALS["host"], $GLOBALS["dbusername"], $GLOBALS["dbpassword"], $GLOBALS["server"]);
+		$sql = "SELECT * FROM sensor";
+		$result = $conn->query($sql);
+
+
+		if ($result->num_rows > 0) {
+
+
+			while($row = $result->fetch_assoc()) {
+				echo "<tr><td>" . $row['id'] . "</td><td>" . $row['time'] . "</td><td>" . $row['value'] . "</td></tr>"; 
+			}
+			echo "</table>";
+		} else {
+			echo "0 results";
+		}
+		
+	}
+echo connection();
 ?>
     </table>
     </body>
-</html
+</html>
