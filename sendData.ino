@@ -59,10 +59,10 @@ void loop() {
         USE_SERIAL.print("[HTTP] begin...\n");
         // configure traged server and url
         //http.begin("https://192.168.1.12/test.html", "7a 9c f4 db 40 d3 62 5a 6e 21 bc 5c cc 66 c8 3e a1 45 59 38"); //HTTPS
-        //String address = "http://sisekliima.000webhostapp.com/write_data.php?value=987665";
+        //String address = "http://sisekliima.000webhostapp.com/write_data.php?value=";
         //String result = address + boost::lexical_cast<std::string>(lux);
         String test = "http://sisekliima.000webhostapp.com/test.html";
-        http.begin("http://sisekliima.000webhostapp.com/test.html"); //HTTP 
+        http.begin("http://sisekliima.000webhostapp.com/write_data.php?valgus="+String(lux)); //HTTP 
 
         USE_SERIAL.print("[HTTP] GET...\n");
         // start connection and send HTTP header
