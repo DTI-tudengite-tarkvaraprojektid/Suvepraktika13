@@ -1,6 +1,7 @@
+
 <?php
 $url=$_SERVER['REQUEST_URI'];
-header("Refresh: 1; URL=$url");  // Refresh the webpage every 5 seconds
+header("Refresh: 5; URL=$url");  // Refresh the webpage every 5 seconds
 ?>
 <html>
 <head>
@@ -8,18 +9,22 @@ header("Refresh: 1; URL=$url");  // Refresh the webpage every 5 seconds
 </head>
     <body>
         <h1>Light sensor readings</h1>
-    <table border="0" cellspacing="0" cellpadding="4">
+    <table border="0" cellspacing="0" cellpadding="25">
       <tr>
             <td>ID</td>
             <td>Timestamp</td>
-            <td>Value</td>
+            <td>Ruum</td>
+            <td>Temperatuur</td>
+            <td>Ohuniiskus</td>
+            <td>Valgus</td>
       </tr>
       
 <?php
-    $host='sql203.epizy.com';
-    $dbusername = "epiz_22225394";  // enter database username, I used "arduino" in step 2.2
+    date_default_timezone_set('Europe/Tallinn');
+    $host='localhost';
+    $dbusername = "id6141049_suvepraktika";  // enter database username, I used "arduino" in step 2.2
     $dbpassword = "ryhm13";  // enter database password, I used "arduinotest" in step 2.2
-    $server = "epiz_22225394_suvepraktika13";
+    $server = "id6141049_sensor";
 
 	function connection(){
 		$conn = new mysqli($GLOBALS["host"], $GLOBALS["dbusername"], $GLOBALS["dbpassword"], $GLOBALS["server"]);
@@ -31,7 +36,14 @@ header("Refresh: 1; URL=$url");  // Refresh the webpage every 5 seconds
 
 
 			while($row = $result->fetch_assoc()) {
-				echo "<tr><td>" . $row['id'] . "</td><td>" . $row['time'] . "</td><td>" . $row['value'] . "</td></tr>"; 
+			     echo "<tr>";
+                 echo "<td>" . $row['id'] . "</td>";
+                 echo "<td>" . $row['time'] . "</td>";
+                 echo "<td>" ."&#8470; ". $row['ruum'] . "</td>";
+                 echo "<td>" . $row['temperatuur'] . "&deg;C" ."</td>";
+                 echo "<td>" . $row['ohuniiskus'] . "%" . "</td>";
+                 echo "<td>" . $row['valgus'] . "lux" . "</td>";
+                 echo "</tr>";
 			}
 			echo "</table>";
 		} else {
@@ -43,4 +55,4 @@ echo connection();
 ?>
     </table>
     </body>
-</html>
+</html>	
