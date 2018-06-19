@@ -1,0 +1,64 @@
+h1{
+    font-family: 'Poiret One', cursive;
+    font-size: 50px;
+    margin: 10px;
+}
+.button-container{
+    margin: 10px;
+}
+
+div .button{
+    border-radius: 8px;
+    background-color: #B71234;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+ }
+a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.logout{
+    background-color: #B71234; /* TLU värv */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.logout {
+    background-color: white; 
+    color: #B71234; 
+    border: 2px solid #B71234;
+}
+.logout:hover {
+    background-color: #B71234;
+    color: white;
+}
+.sorting{
+    margin: 10px;
+}
+.sensorLocation{
+    padding: 10px;
+    border: 1px solid #B71234;
+    margin: 25px;
+}
+label{
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+    font-weight: bold;
+}
