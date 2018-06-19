@@ -1,5 +1,7 @@
 ## Töökeskkonna Monitoorimise Seade
 
+Link veebilehele: http://sisekliima.000webhostapp.com/login.php
+
 ### Eesmärk ja Lühikirjeldus
 Projekti eesmärgiks oli luua töötav lahendus töökeskkonna monitoorimiseks. Seade tegeleb temperatuuri, niiskuse ja valgustiheduse mõõtmisega. Peale seda saadab andmed andmebaasi ning veebilehel kuvatakse näidud juba tabeli- ja graafikukujul. Graafikul on ka näha alampiire. Üle/alla mille näitavad peavad olema.
 Projekt on loodud Digitehnoloogia Instituudi informaatika eriala esimese aasta Tarkvaraarenduse Praktika aine suvepraktika raames. 
