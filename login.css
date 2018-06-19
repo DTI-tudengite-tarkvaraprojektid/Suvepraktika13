@@ -1,0 +1,22 @@
+.loginBody{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:30em;
+    height:19em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 2px solid #B71234;
+    background-color: #f3f3f3;
+    text-align: center;
+}
+form{
+    text-align: center;
+    vertical-align: middle;
+}
+.button{
+    margin-bottom: 1em !important;
+}
+img{
+    margin-top: 1em;
+}
