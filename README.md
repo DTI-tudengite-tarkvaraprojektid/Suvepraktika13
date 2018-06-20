@@ -21,4 +21,14 @@ Projekt on loodud Digitehnoloogia Instituudi informaatika eriala esimese aasta T
   * Seadme sisselülitamisel hakkab tal loop tööle ja hakkabki andmeid andmebaasi saatma.
   * Git-i repositooriumis olevad failid tuleb kuhugi serverisse panna, et saaks veebist ligi neile.
   * get_data leht on andmete kuvamine tabeli kujul, kust edasi saab üleval paiknevate nuppude abil navigeerida teistele lehtedele.
-  
+### Andmebaasi loomine
+```
+CREATE TABLE `sensor` (
+  `id` int(11) NOT NULL,
+  `time` datetime NOT NULL,
+  `ruum` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `temperatuur` float NOT NULL,
+  `ohuniiskus` float NOT NULL,
+  `valgus` int(11) NOT NULL
+)
+```
