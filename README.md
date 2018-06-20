@@ -11,16 +11,18 @@ Projekt on loodud Digitehnoloogia Instituudi informaatika eriala esimese aasta T
   * Lõpuks oli vaja tekitada serveri pool, kuhu seade saaks andmeid saata.Selleks leidsime 000webhost-i, mis on tasuta serveri leht. Sealt saab faile ja ka serveri poolt hallata PHPMyAdmin-i kaudu
 
 ### Projekti panustajad
-  * Katri Palo
-  * Dennis Richard Šulga
+  * Katri Palo 
+  * Dennis Richard Šulga 
   * Andre Martov 
-  * Caspar Sepp
+  * Caspar Sepp 
   * Alexander Lawrence
 ### Seadme käivitamine ja kasutamine
   * Esiteks on vaja Arduino IDE-s kood Node MCU-le (või muule Arduino skeemile) üles laadida. 
+  * Tuleb luua andmebaas(SQL käsk allpool)
   * Seadme sisselülitamisel hakkab tal loop tööle ja hakkabki andmeid andmebaasi saatma.
   * Git-i repositooriumis olevad failid tuleb kuhugi serverisse panna, et saaks veebist ligi neile.
   * get_data leht on andmete kuvamine tabeli kujul, kust edasi saab üleval paiknevate nuppude abil navigeerida teistele lehtedele.
+
 ### Andmebaasi loomine
 ```
 CREATE TABLE `sensor` (
