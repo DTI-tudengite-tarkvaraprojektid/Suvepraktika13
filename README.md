@@ -19,11 +19,13 @@ Projekt on loodud Digitehnoloogia Instituudi informaatika eriala esimese aasta T
   * Caspar Sepp 
   * Alexander Lawrence
 ### Seadme käivitamine ja kasutamine
-  * Esiteks on vaja Arduino IDE-s kood Node MCU-le (või muule Arduino skeemile) üles laadida. 
-  * Tuleb luua andmebaas(SQL käsk allpool)
-  * Seadme sisselülitamisel hakkab tal loop tööle ja hakkabki andmeid andmebaasi saatma.
-  * Git-i repositooriumis olevad failid tuleb kuhugi serverisse panna, et saaks veebist ligi neile.
-  * get_data leht on andmete kuvamine tabeli kujul, kust edasi saab üleval paiknevate nuppude abil navigeerida teistele lehtedele.
+ Tuleb laadida NODEMCU arendusplaadile vastav kood
+-Luua andmebaas nimega sensor
+-Tuleb omada serverit, kus veebilehte jooksutada 
+-Luua vpconfig fail(kui ei ole olemas), kus määratakse ära server, andmebaasi nimi ja parool. Fail peab olema ühe astme võrra public_html kaustast väljas pool
+-Oluline, et vpconfig fail on välja kutsutud(require) kõikides failides, kus suheldakse andmebaasiga
+-Ülejäänud koodi osa paigutada public_html kausta
+-Sisselogimiseks kasutada vastavat kasutajanime ja parooli
 
 ### Andmebaasi loomine
 ```
