@@ -19,13 +19,13 @@ Projekt on loodud Digitehnoloogia Instituudi informaatika eriala esimese aasta T
   * Caspar Sepp 
   * Alexander Lawrence
 ### Seadme käivitamine ja kasutamine
- Tuleb laadida NODEMCU arendusplaadile vastav kood
--Luua andmebaas nimega sensor
--Tuleb omada serverit, kus veebilehte jooksutada 
--Luua vpconfig fail(kui ei ole olemas), kus määratakse ära server, andmebaasi nimi ja parool. Fail peab olema ühe astme võrra public_html kaustast väljas pool
--Oluline, et vpconfig fail on välja kutsutud(require) kõikides failides, kus suheldakse andmebaasiga
--Ülejäänud koodi osa paigutada public_html kausta
--Sisselogimiseks kasutada vastavat kasutajanime ja parooli
+*Tuleb laadida NODEMCU arendusplaadile vastav kood
+*Luua andmebaas nimega sensor
+*Tuleb omada serverit, kus veebilehte jooksutada 
+*Luua vpconfig fail(kui ei ole olemas), kus määratakse ära server, andmebaasi nimi ja parool. Fail peab olema ühe astme võrra     public_html kaustast väljas pool
+*Oluline, et vpconfig fail on välja kutsutud(require) kõikides failides, kus suheldakse andmebaasiga
+*Ülejäänud koodi osa paigutada public_html kausta
+*Sisselogimiseks kasutada vastavat kasutajanime ja parooli
 
 ### Andmebaasi loomine
 ```
