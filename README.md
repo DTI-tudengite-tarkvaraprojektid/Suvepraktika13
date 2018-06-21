@@ -6,7 +6,7 @@ Link veebilehele: http://sisekliima.000webhostapp.com/login.php
 Projekti eesmärgiks oli luua töötav lahendus töökeskkonna monitoorimiseks. Seade tegeleb temperatuuri, niiskuse ja valgustiheduse mõõtmisega. Peale seda saadab andmed andmebaasi ning veebilehel kuvatakse näidud juba tabeli- ja graafikukujul. Graafikul on ka näha alampiire. Üle/alla mille näitavad peavad olema.
 Projekt on loodud Digitehnoloogia Instituudi informaatika eriala esimese aasta Tarkvaraarenduse Praktika aine suvepraktika raames. 
 
-<img src="sisekliima.jpg" alt="rakendus"/>
+<img src="rakendus.jpg" alt="pilt"/>
 
 ### Tehnoloogiad
   * Alguses oli tihe koostöö Arduino IDE-ga(ver. 1.8.5), kus sai Arduino skeemile kirjutatud kood, mis hakkab tööle, kui seade tööle läheb.
