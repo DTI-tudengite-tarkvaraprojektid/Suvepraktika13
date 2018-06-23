@@ -39,8 +39,9 @@ CREATE TABLE `sensor` (
 )
 ```
 ### Vpconfigi näide
-<?php
+`<?php
 	$DB_SERVER = "server";
 	$DB_USERNAME = "andmebaasi nimi";
 	$DB_PASSWORD = "andmebaasi parool";
-?> 
+?>
+`
